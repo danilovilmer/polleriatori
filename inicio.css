@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .carousel-item {
+    max-height: 100vh;
+  }
+  
+  .carousel-item h5 {
+    font-size: 40px;
+  }
+  
+  .carousel-item p {
+    font-size: 20px;
+  }
+  
+  .header {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 150px;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+  }
+  
+  .nav-links ul li a:hover {
+    color: blanchedalmond;
+  }
+  
+  .nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(41, 103, 66);
+    display: block;
+    margin: auto;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 2px solid rgb(226, 225, 221);
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: orange;
+    font-size: 1.3em;
+    color: black;
+  }
+  
+  .footer h2 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 1.3em;
+  }
+  
+  .icons .fa-brands {
+    color: orangered;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+  
+  .fa-brands {
+    color: rgb(180, 96, 96);
+  }
+  
+  /* Media Queries */
+  
+  /* Para pantallas de hasta 1024px */
+  @media (max-width: 1024px) {
+    nav {
+      padding: 2% 4%;
+    }
+  
+    .nav-links ul {
+      flex-wrap: wrap; /* Permite que los elementos del menú se envuelvan en pantallas más pequeñas */
+      justify-content: center; /* Centra los elementos del menú en pantallas más pequeñas */
+    }
+  
+    .nav-links ul li {
+      padding: 8px;
+    }
+  
+    .footer {
+      font-size: 1.2em;
+    }
+  
+    .footer h2 {
+      font-size: 1.2em;
+    }
+  
+    .icons .fa-brands {
+      font-size: 1.3em;
+    }
+  }
+  
+  /* Para pantallas de hasta 768px */
+  @media (max-width: 768px) {
+    nav {
+      padding: 2% 2%;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links ul li {
+      padding: 8px 0;
+    }
+  
+    .footer {
+      font-size: 1.1em;
+    }
+  
+    .footer h2 {
+      font-size: 1.1em;
+    }
+  
+    .icons .fa-brands {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Para pantallas de hasta 480px */
+  @media (max-width: 480px) {
+    .header {
+      text-align: center;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 0 2%;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .nav-links ul li {
+      padding: 6px 0;
+    }
+  
+    .footer {
+      font-size: 1em;
+      padding: 10px;
+    }
+  
+    .footer h2 {
+      font-size: 1em;
+    }
+  
+    .icons .fa-brands {
+      font-size: 1em;
+      margin: 0 8px;
+    }
+  }
+  

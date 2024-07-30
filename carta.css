@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: orangered;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a {
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+
+.nav-links ul li a:hover {
+    color: aliceblue;
+}
+
+.contenedor {
+    flex: 1;
+    background-color: rgb(245, 245, 244);
+    background-image: url(img/pollito.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 20px;
+}
+
+.item {
+    background-color: rgb(207, 138, 10);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(177, 81, 81, 0.1);
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.item-details {
+    padding: 15px;
+}
+
+.item-details h2 {
+    margin-top: 0;
+    color: #0c0b0b;
+    text-align: center;
+}
+
+.item-details p {
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: orange;
+    font-size: 1.3em;
+    color: black;
+}
+    
+.footer h2 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.icons a {
+    color: orangered;
+    margin: 0 13px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
